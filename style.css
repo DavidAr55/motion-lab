@@ -56,6 +56,30 @@ pre {
 
 /* ----------------- Animaciones Infinitas con Keyframes (Originales) ----------------- */
 
+/* 0. Custom */
+.box-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: customAnim 15s infinite;
+}
+@keyframes customAnim {
+    0% { transform: translate(0, 0); }
+    15% { transform: translate(calc(100vw - 160px), calc(100vh - 130px)); }
+    35% { transform: translate(calc(100vw - 160px), 0); }
+    55% { transform: translate(0, calc(100vh - 130px)); }
+    75% { transform: translate(calc(50vw - 160px), calc(50vh - 130px)); }
+    100% { transform: translate(0, 0); }
+}
+
+.box-custom:hover {
+    border-radius: 25px;
+}
+
+.box-custom:active {
+    color: #ff3939;
+}
+
 /* 1. Scale Up */
 .box-scale {
     animation: scaleAnim 1s infinite alternate;
@@ -76,11 +100,11 @@ pre {
 
 /* 3. Rotate */
 .box-rotate {
-    animation: rotateAnim 1s infinite alternate;
+    animation: rotateAnim 10s infinite;
 }
 @keyframes rotateAnim {
     from { transform: rotate(0deg); }
-    to { transform: rotate(10deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* 4. Translate X */
@@ -97,7 +121,7 @@ pre {
     animation: translateYAnim 1s infinite alternate;
 }
 @keyframes translateYAnim {
-    from { transform: translateY(0); }
+    from { transform: translate(0); }
     to { transform: translateY(20px); }
 }
 
@@ -121,11 +145,17 @@ pre {
 
 /* 8. Sombra ampliada */
 .box-shadow {
-    animation: shadowAnim 1s infinite alternate;
+    animation: shadowAnim 2s infinite alternate;
 }
 @keyframes shadowAnim {
-    from { box-shadow: 2px 2px 0 #000; }
-    to { box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    from { 
+        box-shadow: 2px 2px 0 #000;
+        scale: 1;
+    }
+    to { 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        scale: 1.5;
+    }
 }
 
 /* 9. Skew */
@@ -187,7 +217,7 @@ pre {
 /* 15. Gradiente animado */
 .box-gradient {
     animation: gradientAnim 1s infinite alternate;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(90deg, #0011ff, #fad0c4);
     background-size: 200% 200%;
 }
 @keyframes gradientAnim {
@@ -201,7 +231,7 @@ pre {
 }
 @keyframes rotateYAnim {
     from { transform: perspective(500px) rotateY(0deg); }
-    to { transform: perspective(500px) rotateY(20deg); }
+    to { transform: perspective(500px) rotateY(360deg); }
 }
 
 /* ----------------- Animaciones Adicionales ----------------- */
