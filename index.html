@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animaciones Hover - Windows 98</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Archivo CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Animaciones Originales -->
+    <!-- 1. Scale Up -->
+    <section class="full-screen-section" id="section1">
+      <div class="box box-scale">
+        <div class="box-number">Box 1</div>
+        <pre><code>.box-scale {
+  transform: scale(1.1);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 2. Scale Down -->
+    <section class="full-screen-section" id="section2">
+      <div class="box box-scale-down">
+        <div class="box-number">Box 2</div>
+        <pre><code>.box-scale-down {
+  transform: scale(0.9);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 3. Rotate -->
+    <section class="full-screen-section" id="section3">
+      <div class="box box-rotate">
+        <div class="box-number">Box 3</div>
+        <pre><code>.box-rotate {
+  transform: rotate(10deg);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 4. Translate X -->
+    <section class="full-screen-section" id="section4">
+      <div class="box box-translate-x">
+        <div class="box-number">Box 4</div>
+        <pre><code>.box-translate-x {
+  transform: translateX(20px);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 5. Translate Y -->
+    <section class="full-screen-section" id="section5">
+      <div class="box box-translate-y">
+        <div class="box-number">Box 5</div>
+        <pre><code>.box-translate-y {
+  transform: translateY(20px);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 6. Rotate & Scale -->
+    <section class="full-screen-section" id="section6">
+      <div class="box box-rotate-scale">
+        <div class="box-number">Box 6</div>
+        <pre><code>.box-rotate-scale {
+  transform: rotate(-10deg) scale(1.2);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 7. Cambio de fondo -->
+    <section class="full-screen-section" id="section7">
+      <div class="box box-bg">
+        <div class="box-number">Box 7</div>
+        <pre><code>.box-bg {
+  background-color: #ffedcc;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 8. Sombra ampliada -->
+    <section class="full-screen-section" id="section8">
+      <div class="box box-shadow">
+        <div class="box-number">Box 8</div>
+        <pre><code>.box-shadow {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 9. Skew -->
+    <section class="full-screen-section" id="section9">
+      <div class="box box-skew">
+        <div class="box-number">Box 9</div>
+        <pre><code>.box-skew {
+  transform: skewX(15deg);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 10. Opacity -->
+    <section class="full-screen-section" id="section10">
+      <div class="box box-opacity">
+        <div class="box-number">Box 10</div>
+        <pre><code>.box-opacity {
+  opacity: 0.5;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 11. Borde circular -->
+    <section class="full-screen-section" id="section11">
+      <div class="box box-border">
+        <div class="box-number">Box 11</div>
+        <pre><code>.box-border {
+  border-radius: 50%;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 12. Desenfoque -->
+    <section class="full-screen-section" id="section12">
+      <div class="box box-blur">
+        <div class="box-number">Box 12</div>
+        <pre><code>.box-blur {
+  filter: blur(2px);
+}</code></pre>
+      </div>
+    </section>
+    <!-- 13. Outline resaltado -->
+    <section class="full-screen-section" id="section13">
+      <div class="box box-outline">
+        <div class="box-number">Box 13</div>
+        <pre><code>.box-outline {
+  outline: 3px solid #ff6666;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 14. Cambio de color del borde -->
+    <section class="full-screen-section" id="section14">
+      <div class="box box-border-color">
+        <div class="box-number">Box 14</div>
+        <pre><code>.box-border-color {
+  border-color: #00bfff;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 15. Gradiente animado -->
+    <section class="full-screen-section" id="section15">
+      <div class="box box-gradient">
+        <div class="box-number">Box 15</div>
+        <pre><code>.box-gradient {
+  background-position: right center;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 16. 3D Rotate en el eje Y -->
+    <section class="full-screen-section" id="section16">
+      <div class="box box-rotate-y">
+        <div class="box-number">Box 16</div>
+        <pre><code>.box-rotate-y {
+  transform: perspective(500px) rotateY(20deg);
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Animaciones Adicionales -->
+    <!-- 17. Fade In -->
+    <section class="full-screen-section" id="section17">
+      <div class="box animate-fade-in">
+        <div class="box-number">Box 17</div>
+        <pre><code>.animate-fade-in {
+  animation: fadeIn 2s infinite alternate;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 18. Fade Out -->
+    <section class="full-screen-section" id="section18">
+      <div class="box animate-fade-out">
+        <div class="box-number">Box 18</div>
+        <pre><code>.animate-fade-out {
+  animation: fadeOut 2s infinite alternate;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 19. Bounce -->
+    <section class="full-screen-section" id="section19">
+      <div class="box animate-bounce">
+        <div class="box-number">Box 19</div>
+        <pre><code>.animate-bounce {
+  animation: bounce 2s infinite;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 20. Pulse -->
+    <section class="full-screen-section" id="section20">
+      <div class="box animate-pulse">
+        <div class="box-number">Box 20</div>
+        <pre><code>.animate-pulse {
+  animation: pulse 2s infinite;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 21. Flash -->
+    <section class="full-screen-section" id="section21">
+      <div class="box animate-flash">
+        <div class="box-number">Box 21</div>
+        <pre><code>.animate-flash {
+  animation: flash 1.5s infinite;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 22. Shake -->
+    <section class="full-screen-section" id="section22">
+      <div class="box animate-shake">
+        <div class="box-number">Box 22</div>
+        <pre><code>.animate-shake {
+  animation: shake 0.5s infinite;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 23. Swing -->
+    <section class="full-screen-section" id="section23">
+      <div class="box animate-swing">
+        <div class="box-number">Box 23</div>
+        <pre><code>.animate-swing {
+  animation: swing 2s infinite;
+}</code></pre>
+      </div>
+    </section>
+    <!-- 24. Flip -->
+    <section class="full-screen-section" id="section24">
+      <div class="box animate-flip">
+        <div class="box-number">Box 24</div>
+        <pre><code>.animate-flip {
+  animation: flip 2s infinite alternate;
+}</code></pre>
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript para el scroll suave -->
+  <script>
+    const sections = document.querySelectorAll('.full-screen-section');
+    sections.forEach((section, index) => {
+      section.addEventListener('click', () => {
+        // Si es la última sección, regresa a la primera
+        if (index === sections.length - 1) {
+          sections[0].scrollIntoView({ behavior: 'smooth' });
+        } else {
+          sections[index + 1].scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

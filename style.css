@@ -1,0 +1,287 @@
+/* Fondo de escritorio Windows 98 */
+body {
+    background: #748eff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor general */
+.container {
+    overflow-x: hidden;
+}
+
+/* Cada sección ocupa el 100% del viewport */
+.full-screen-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo base para las cajas estilo Windows 98 */
+.box {
+    padding: 20px 40px;
+    background: #C0C0C0;
+    border: 2px outset #fff;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    color: #000;
+    text-align: left;
+    box-shadow: 2px 2px 0 #000;
+    max-width: 90%;
+    transition: all 0.5s ease;
+}
+
+/* Mostrar el número de box */
+.box-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Pausar animación en hover */
+.box:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* Estilos para los bloques de código */
+pre {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    margin: 0;
+}
+
+/* ----------------- Animaciones Infinitas con Keyframes (Originales) ----------------- */
+
+/* 1. Scale Up */
+.box-scale {
+    animation: scaleAnim 1s infinite alternate;
+}
+@keyframes scaleAnim {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+/* 2. Scale Down */
+.box-scale-down {
+    animation: scaleDownAnim 1s infinite alternate;
+}
+@keyframes scaleDownAnim {
+    from { transform: scale(1); }
+    to { transform: scale(0.9); }
+}
+
+/* 3. Rotate */
+.box-rotate {
+    animation: rotateAnim 1s infinite alternate;
+}
+@keyframes rotateAnim {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(10deg); }
+}
+
+/* 4. Translate X */
+.box-translate-x {
+    animation: translateXAnim 1s infinite alternate;
+}
+@keyframes translateXAnim {
+    from { transform: translateX(0); }
+    to { transform: translateX(20px); }
+}
+
+/* 5. Translate Y */
+.box-translate-y {
+    animation: translateYAnim 1s infinite alternate;
+}
+@keyframes translateYAnim {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); }
+}
+
+/* 6. Rotate & Scale */
+.box-rotate-scale {
+    animation: rotateScaleAnim 1s infinite alternate;
+}
+@keyframes rotateScaleAnim {
+    from { transform: rotate(0deg) scale(1); }
+    to { transform: rotate(-10deg) scale(1.2); }
+}
+
+/* 7. Cambio de fondo */
+.box-bg {
+    animation: bgAnim 1s infinite alternate;
+}
+@keyframes bgAnim {
+    from { background-color: #C0C0C0; }
+    to { background-color: #ffedcc; }
+}
+
+/* 8. Sombra ampliada */
+.box-shadow {
+    animation: shadowAnim 1s infinite alternate;
+}
+@keyframes shadowAnim {
+    from { box-shadow: 2px 2px 0 #000; }
+    to { box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+}
+
+/* 9. Skew */
+.box-skew {
+    animation: skewAnim 1s infinite alternate;
+}
+@keyframes skewAnim {
+    from { transform: skewX(0deg); }
+    to { transform: skewX(15deg); }
+}
+
+/* 10. Opacity */
+.box-opacity {
+    animation: opacityAnim 1s infinite alternate;
+}
+@keyframes opacityAnim {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+
+/* 11. Borde circular */
+.box-border {
+    animation: borderRadiusAnim 1s infinite alternate;
+}
+@keyframes borderRadiusAnim {
+    from { border-radius: 0; }
+    to { border-radius: 50%; }
+}
+
+/* 12. Desenfoque */
+.box-blur {
+    animation: blurAnim 1s infinite alternate;
+}
+@keyframes blurAnim {
+    from { filter: blur(0); }
+    to { filter: blur(2px); }
+}
+
+/* 13. Outline resaltado */
+.box-outline {
+    animation: outlineAnim 1s infinite alternate;
+}
+@keyframes outlineAnim {
+    from { outline: none; }
+    to { outline: 3px solid #ff6666; }
+}
+
+/* 14. Cambio de color del borde */
+.box-border-color {
+    animation: borderColorAnim 1s infinite alternate;
+    border: 2px outset #fff;
+    box-shadow: 2px 2px 0 #000;
+}
+@keyframes borderColorAnim {
+    from { border-color: #fff; }
+    to { border-color: #00bfff; }
+}
+
+/* 15. Gradiente animado */
+.box-gradient {
+    animation: gradientAnim 1s infinite alternate;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    background-size: 200% 200%;
+}
+@keyframes gradientAnim {
+    from { background-position: left center; }
+    to { background-position: right center; }
+}
+
+/* 16. 3D Rotate en el eje Y */
+.box-rotate-y {
+    animation: rotateYAnim 1s infinite alternate;
+}
+@keyframes rotateYAnim {
+    from { transform: perspective(500px) rotateY(0deg); }
+    to { transform: perspective(500px) rotateY(20deg); }
+}
+
+/* ----------------- Animaciones Adicionales ----------------- */
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fadeIn 2s infinite alternate;
+}
+
+/* Fade Out */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.animate-fade-out {
+  animation: fadeOut 2s infinite alternate;
+}
+
+/* Bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Pulse */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Flash */
+@keyframes flash {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+.animate-flash {
+  animation: flash 1.5s infinite;
+}
+
+/* Shake */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+.animate-shake {
+  animation: shake 0.5s infinite;
+}
+
+/* Swing */
+@keyframes swing {
+  20% { transform: rotate3d(0, 0, 1, 15deg); }
+  40% { transform: rotate3d(0, 0, 1, -10deg); }
+  60% { transform: rotate3d(0, 0, 1, 5deg); }
+  80% { transform: rotate3d(0, 0, 1, -5deg); }
+  100% { transform: rotate3d(0, 0, 1, 0deg); }
+}
+.animate-swing {
+  animation: swing 2s infinite;
+}
+
+/* Flip */
+@keyframes flip {
+  0% { transform: perspective(400px) rotateY(0deg); }
+  100% { transform: perspective(400px) rotateY(180deg); }
+}
+.animate-flip {
+  animation: flip 2s infinite alternate;
+}
